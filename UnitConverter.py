@@ -50,7 +50,7 @@ def run_conversion(category_name, conversions):
 
     try:
         result = calculate_conversion(value, selected)
-        print(f"Result: {result:.2f} {selected['unit']}")
+        print(f"Result: {result} {selected['unit']}")
     except KeyError:
         print("Error: Missing factor, offset or unit")
     except TypeError:
