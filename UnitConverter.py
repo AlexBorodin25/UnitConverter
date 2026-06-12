@@ -59,7 +59,7 @@ def main():
     if conversions is None:
         return
 
-    categories = list(conversion.keys())
+    categories = list(conversions.keys())
 
     while True:
         print("\nUnit Converter")
