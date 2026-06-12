@@ -53,3 +53,28 @@ def run_conversion(category_name, conversions):
     except Exception:
         print("Error: Could not convert.")
 
+def main():
+    conversions = load_conversions()
+
+    if conversions is None:
+        return
+
+    categories = list(conversion.keys())
+
+    while True:
+        print("\nUnit Converter")
+        for index, category in enumerate(categories, start=1):
+            print(f"{index}. {category.title()}")
+        print(f"{len(categories) + 1}. Quit")
+
+        choice = get_choice(len(categories) + 1)
+
+        if choice == len(categories) + 1:
+            print("Goodbye!")
+            break
+
+        selected_category = categories[choice - 1]
+        run_conversion(selected_category, conversions)
+
+if __name__ == "__main__":
+    main()
