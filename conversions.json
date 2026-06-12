@@ -56,22 +56,22 @@
   },
   "temperature": {
     "fahrenheit_to_celcius": {
-      "label": "Fahrenheit to Celcius",
+      "label": "Fahrenheit to Celsius",
       "formula": "(value - 32) * 5/9",
       "unit": "C"
     },
     "celcius_to_farenheit": {
-      "label": "Celcius to Farenheit",
+      "label": "Celsius to Fahrenheit",
       "formula": "(value * 9/5) + 32",
       "unit": "F"
     },
     "celcius_to_kelvin": {
-      "label": "Celcius to Kelvin",
+      "label": "Celsius to Kelvin",
       "formula": "value + 273.15",
       "unit": "K"
     },
     "kelvin_to_celcius": {
-      "label": "Kelvin to Celcius",
+      "label": "Kelvin to Celsius",
       "formula": "value - 273.15",
       "unit": "C"
     }
