@@ -3,76 +3,90 @@
   "length": {
     "miles_to_kilometers": {
       "label": "Miles to Kilometers",
-      "formula": "value * 1.609",
+      "factor": 1.609,
+      "offset": 0,
       "unit": "km"
     },
     "kilometers_to_miles": {
       "label": "Kilometers to Miles",
-      "formula": "value/1.609",
+      "factor": 0.621371,
+      "offset": 0,
       "unit": "mi"
     },
     "feet_to_meters": {
       "label": "Feet to Meters",
-      "formula": "value * 0.3048",
+      "factor": 0.3048,
+      "offset": 0,
       "unit": "m"
     },
     "meters_to_feet": {
       "label": "Meters to Feet",
-      "formula": "value * 3.28084",
+      "factor": 3.28084,
+      "offset": 0,
       "unit": "ft"
     },
     "inches_to_centimeters": {
       "label": "Inches to Centimeters",
-      "formula": "value * 2.54",
+      "factor": 2.54,
+      "offset": 0,
       "unit": "cm"
     },
     "centimeters_to_inches": {
       "label": "Centimeters to Inches",
-      "formula": "value/2.54",
+      "factor": 0.393701,
+      "offset": 0,
       "unit": "in"
     }
   },
   "weight": {
     "kilograms_to_pounds": {
       "label": "Kilograms to Pounds",
-      "formula": "value * 2.205",
+      "factor": 2.20462,
+      "offset": 0,
       "unit": "lbs"
     },
     "pounds_to_kilograms": {
       "label": "Pounds to Kilograms",
-      "formula": "value/2.205",
+      "factor": 0.453592,
+      "offset": 0,
       "unit": "kg"
     },
     "ounces_to_grams": {
       "label": "Ounces to Grams",
-      "formula": "value * 28.35",
+      "factor": 28.3495,
+      "offset": 0,
       "unit": "g"
     },
     "grams_to_ounces": {
       "label": "Grams to Ounces",
-      "formula": "value/28.35",
+      "factor": 0.03527396,
+      "offset": 0,
       "unit": "oz"
     }
   },
   "temperature": {
     "fahrenheit_to_celcius": {
       "label": "Fahrenheit to Celsius",
-      "formula": "(value - 32) * 5/9",
+      "factor": 0.5555555556,
+      "offset": -17.7777777778,
       "unit": "C"
     },
     "celcius_to_farenheit": {
       "label": "Celsius to Fahrenheit",
-      "formula": "(value * 9/5) + 32",
+      "factor": 1.8,
+      "offset": 32,
       "unit": "F"
     },
     "celcius_to_kelvin": {
       "label": "Celsius to Kelvin",
-      "formula": "value + 273.15",
+      "factor": 1,
+      "offset": 273.15,
       "unit": "K"
     },
     "kelvin_to_celcius": {
       "label": "Kelvin to Celsius",
-      "formula": "value - 273.15",
+      "factor": 1,
+      "offset": -273.15,
       "unit": "C"
     }
   }
