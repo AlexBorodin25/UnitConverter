@@ -30,9 +30,10 @@ def get_choice(max_choice):
         except ValueError:
             print("Please enter a number.")
 
-def calculate_conversion(value, formula):
-    allowed_names = {"value": value}
-    return eval(formula, {"__builtins__": {}}, allowed_names)
+def calculate_conversion(value, conversion):
+   factor = conversion["factor"]
+   offset = conversion["offset"]
+   return (value * factor) + offset
 
 def run_conversion(category_name, conversions):
     category = conversions[category_name]
@@ -48,10 +49,12 @@ def run_conversion(category_name, conversions):
     value = get_number("Enter value: ")
 
     try:
-        result = calculate_conversion(value, selected["formula"])
+        result = calculate_conversion(value, selected)
         print(f"Result: {result:.2f} {selected['unit']}")
-    except Exception:
-        print("Error: Could not convert.")
+    except KeyError:
+        print("Error: Missing factor, offset or unit")
+    except TypeError:
+        print("Error: Factor and offset must be numbers")
 
 def main():
     conversions = load_conversions()
