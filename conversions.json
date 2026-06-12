@@ -1,0 +1,79 @@
+
+{
+  "length": {
+    "miles_to_kilometers": {
+      "label": "Miles to Kilometers",
+      "formula": "value * 1.609",
+      "unit": "km"
+    },
+    "kilometers_to_miles": {
+      "label": "Kilometers to Miles",
+      "formula": "value/1.609",
+      "unit": "mi"
+    },
+    "feet_to_meters": {
+      "label": "Feet to Meters",
+      "formula": "value * 0.3048",
+      "unit": "m"
+    },
+    "meters_to_feet": {
+      "label": "Meters to Feet",
+      "formula": "value * 3.28084",
+      "unit": "ft"
+    },
+    "inches_to_centimeters": {
+      "label": "Inches to Centimeters",
+      "formula": "value * 2.54",
+      "unit": "cm"
+    },
+    "centimeters_to_inches": {
+      "label": "Centimeters to Inches",
+      "formula": "value/2.54",
+      "unit": "in"
+    }
+  },
+  "weight": {
+    "kilograms_to_pounds": {
+      "label": "Kilograms to Pounds",
+      "formula": "value * 2.205",
+      "unit": "lbs"
+    },
+    "pounds_to_kilograms": {
+      "label": "Pounds to Kilograms",
+      "formula": "value/2.205",
+      "unit": "kg"
+    },
+    "ounces_to_grams": {
+      "label": "Ounces to Grams",
+      "formula": "value * 28.35",
+      "unit": "g"
+    },
+    "grams_to_ounces": {
+      "label": "Grams to Ounces",
+      "formula": "value/28.35",
+      "unit": "oz"
+    }
+  },
+  "temperature": {
+    "fahrenheit_to_celcius": {
+      "label": "Fahrenheit to Celcius",
+      "formula": "(value - 32) * 5/9",
+      "unit": "C"
+    },
+    "celcius_to_farenheit": {
+      "label": "Celcius to Farenheit",
+      "formula": "(value * 9/5) + 32",
+      "unit": "F"
+    },
+    "celcius_to_kelvin": {
+      "label": "Celcius to Kelvin",
+      "formula": "value + 273.15",
+      "unit": "K"
+    },
+    "kelvin_to_celcius": {
+      "label": "Kelvin to Celcius",
+      "formula": "value - 273.15",
+      "unit": "C"
+    }
+  }
+}
