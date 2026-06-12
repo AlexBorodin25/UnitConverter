@@ -1,6 +1,8 @@
 import json
+import os
 
-config_file = "conversions.json"
+script_dir = os.path.dirname(__file__)
+config_file = os.path.join(script_dir, "conversions.json")
 
 def load_conversions():
     try:
